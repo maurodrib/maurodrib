@@ -1,0 +1,290 @@
+/* Documento para la configuracion de todos los elementos preterminados */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'open sans';
+	overflow-x: hidden;
+}
+.box{
+	padding: 20px 0;
+    width: 74%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+h2{
+	color: #642a73;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+/*header*/
+header{
+	width: 100vw;
+	height: 96vh;
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, hsla(246, 71%, 10%, 0.6), hsla(245, 57%, 28%, 0.6), hsla(240, 42%, 19%, 0.6)), url(../img/portada.jpg) no-repeat; /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, hsla(246, 71%, 10%, 0.6), hsla(245, 57%, 28%, 0.6), hsla(240, 42%, 19%, 0.6)), url(../img/portada.jpg) no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: 100% 90%;/*600px*/
+	background-attachment: fixed;
+	position: relative;
+}
+nav{
+	text-align: right;
+	padding: 4vh 4vw 0 0; /*30px 50px*/
+}
+nav > a{
+	color: #fff;
+	font-weight: 300;
+	text-decoration: none;
+    margin-right: 10px;
+	transition: .3s;
+}
+nav > a:hover{
+	border: 1px solid;
+	padding: 4px;
+	border-radius: 2px;
+	font-weight: 700;
+}
+header .txt-header{
+	display: flex;
+	height: 66vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.txt-header h1{
+	font-size: 50px;
+	color: #fff;
+}
+.txt-header p{
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+}
+.nav-div-iconos{
+	display: flex;
+	justify-content: center;
+	margin: 1px;
+}
+.nav-div-iconos a{
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+	padding: 6px 0px;
+	margin: 0px 6px;
+	position: relative;
+	display: block;
+}
+.nav-div-iconos a::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3);
+	background: -o-linear-gradient(to right, #8e9eab, #eef2f3);
+	background: linear-gradient(to right, #8e9eab, #eef2f3);
+	z-index: 1;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .5s ease-in-out;
+}
+.nav-div-iconos a:hover::before{
+	transform: scaleX(1);
+}
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+    height: 15%;
+    overflow: hidden;
+}
+.icon-bar{
+    z-index: 2;
+}
+.icon-bar > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-bar > a:hover{
+    color: #7D94F9;
+}
+.icon-bar{
+    position: fixed;
+    right: 1%;
+    bottom: 3%;
+    width: 50px;
+    height: 50px;
+    background-color: #304352;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-bar:hover{
+    cursor: pointer;
+    box-shadow: 0px 10px 8px 0px #d7dde8 inset;
+}
+/*acerca de*/
+.box-div-acercade{
+	display: flex;
+	justify-content: space-evenly;
+}
+.img-avatar{
+	width: 35%;
+	border-radius: 50%;
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, .8);
+}
+.box-div-acercade .box-div-acercade-txt-contenido{
+	width: 48%;
+}
+.box-div-acercade-txt-contenido h3{
+	margin-bottom: 15px;	
+}
+.box-div-acercade-txt-contenido p{
+	padding: 0 0 30px 15px;
+	font-weight: 300;
+	text-align: justify;
+}
+/*Cards de posts*/
+.card-post{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+.card-post .card{
+    width: 30%;
+    min-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+    margin: 1%;
+}
+.card-post .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.cont-txt-card{
+    width: 100%;
+    padding: 2%;
+}
+.cont-txt-card p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 300;
+    text-align: justify;
+    max-width: 100%;
+    margin: 2% 0;
+    color: #7d7d7d;
+}
+.cont-txt-card a{
+    text-decoration: none;
+    color: #007bff;
+}
+.cont-txt-card a:hover{
+    color: #000;
+}
+/*Portafolio*/
+.gal-port{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.img-port{
+	width: 200px;
+    height: 200px;
+	margin: 0.7%;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	border-radius: 3%;
+}
+.img-port > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.hover-gal{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: #0f0c29;
+	background: -webkit-linear-gradient(to right, hsla(246, 71%, 10%, 0.6), hsla(245, 57%, 28%, 0.6), hsla(240, 42%, 19%, 0.6));
+	background: linear-gradient(to right, hsla(246, 71%, 10%, 0.6), hsla(245, 57%, 28%, 0.6), hsla(240, 42%, 19%, 0.6));
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hover-gal img{
+	width: 50px;
+}
+.hover-gal p{
+	color: #fff;
+}
+.img-port:hover .hover-gal{
+	transform: scale(1);
+}
+/*footer*/
+footer{
+	width: 100vw;
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, hsla(246, 71%, 10%, 0.9), hsla(245, 57%, 28%, 1), hsla(240, 42%, 19%, 0.9));/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, hsla(246, 71%, 10%, 0.9), hsla(245, 57%, 28%, 1), hsla(240, 42%, 19%, 0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+}
+.box-footer{
+	width: 90%;
+	padding: 20px 0;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-contacto{
+	width: 50%;
+}
+.footer-contacto > p{
+	padding: 5px 0;
+}
+.footer-redes{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-redes > a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 6px 0px;
+	margin: 0px 7px;
+	transition: .2s ease;
+}
+.footer-redes > a:hover{
+	color: #84898E;
+}

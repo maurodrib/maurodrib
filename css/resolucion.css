@@ -1,0 +1,55 @@
+@media screen and (max-width:900px) {
+    /*header*/
+    header{
+        background-size: 100% 92%;
+    }
+    .txt-header h1{
+        font-size: 45px;
+    }
+    .txt-header p{
+        font-size: 20px;
+    }
+    .wave{
+        height: 11%;
+    }
+    /*Acerca de*/
+    .box-div-acercade{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-avatar{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .box-div-acercade .box-div-acercade-txt-contenido{
+        width: 98%;
+        text-align: center;
+    }
+    .box-div-acercade-txt-contenido p{
+        padding: 0;
+    }
+    /*Cards de posts*/
+    .card-post .card{
+        min-width: 98%;
+        margin: 0 0 8% 0;
+    }
+    /*Portafolio*/
+    .img-port{
+        width: 100vw;
+        margin: 0 0 8% 0;
+    }
+    /*footer*/
+    .box-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-contacto{
+	    width: 90%;
+        margin-bottom: 12px;
+    }
+    .footer-redes{
+        width: 90%;
+    }
+}
